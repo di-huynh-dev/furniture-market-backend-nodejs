@@ -1,0 +1,22 @@
+{
+  "name": "furniture-marketplace-backend-nodejs",
+  "version": "1.0.0",
+  "description": "api for furniture marketplace",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/di-huynh-dev/furniture-market-backend-nodejs.git"
+  },
+  "author": "Huynh Tien Di",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/di-huynh-dev/furniture-market-backend-nodejs/issues"
+  },
+  "homepage": "https://github.com/di-huynh-dev/furniture-market-backend-nodejs#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
