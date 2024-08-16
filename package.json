@@ -18,6 +18,11 @@
   "homepage": "https://github.com/di-huynh-dev/furniture-market-backend-nodejs#readme",
   "dependencies": {
     "express": "^4.19.2",
+    "mongodb": "^6.8.0",
     "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.5.3"
   }
 }

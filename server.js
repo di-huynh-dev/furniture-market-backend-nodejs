@@ -1,8 +1,14 @@
-const express = require("express");
-const app = express();
+const app = require("./src/app");
+const {
+  app: { port },
+} = require("./src/config/environment");
 
-app.get("/", function (req, res) {
-  res.send("Hello World");
+const server = app.listen(port, () => {
+  console.log(`Server is running at PORT ${port}`);
 });
 
-app.listen(3000);
+process.on("SIGINT", () => {
+  server.close(() => {
+    console.log("Server closed");
+  });
+});
