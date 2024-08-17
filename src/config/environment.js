@@ -10,6 +10,10 @@ const development = {
     port: process.env.DEV_APP_PORT || 27017,
     name: process.env.DEV_DB_NAME || "shopDEV",
   },
+  jwt_config: {
+    secret: process.env.JWT_SECRET,
+    expire: process.env.JWT_EXPIRE,
+  },
 };
 
 const production = {

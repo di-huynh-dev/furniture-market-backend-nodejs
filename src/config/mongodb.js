@@ -2,10 +2,10 @@
 
 const mongoose = require("mongoose");
 const {
-  db: { uri, name },
+  db: { uri },
 } = require("../config/environment");
 
-const connectString = `${uri}/${name}`;
+const connectString = uri;
 
 class Database {
   constructor() {

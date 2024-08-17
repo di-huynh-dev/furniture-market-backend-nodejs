@@ -2,7 +2,7 @@
 
 const mongoose = require("mongoose");
 const DOCUMENT_NAME = "User"; //Record/Row name
-const COLLECTION_NAME = "Shops"; // Table name
+const COLLECTION_NAME = "Users"; // Table name
 
 // Declare the Schema of the Mongo model
 var userSchema = new mongoose.Schema(
@@ -10,8 +10,6 @@ var userSchema = new mongoose.Schema(
     name: {
       type: String,
       required: true,
-      unique: true,
-      index: true,
     },
     email: {
       type: String,
@@ -27,6 +25,7 @@ var userSchema = new mongoose.Schema(
     },
     birthDate: {
       type: Date,
+      default: new Date(),
     },
     password: {
       type: String,
@@ -44,7 +43,7 @@ var userSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-    collation: COLLECTION_NAME,
+    collection: COLLECTION_NAME,
   }
 );
 

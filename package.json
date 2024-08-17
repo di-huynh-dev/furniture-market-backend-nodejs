@@ -17,7 +17,13 @@
   },
   "homepage": "https://github.com/di-huynh-dev/furniture-market-backend-nodejs#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "module-alias": "^2.2.3",
     "mongodb": "^6.8.0",
     "nodemon": "^3.1.4"
   },
