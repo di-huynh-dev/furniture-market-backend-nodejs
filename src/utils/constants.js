@@ -3,4 +3,6 @@ const Roles = {
   ADMIN: "ADMIN",
 };
 
-module.exports = { Roles };
+const PublicRoutes = ["/", "/auth/login", "/auth/signup", "/auth/refreshToken"];
+
+module.exports = { Roles, PublicRoutes };
